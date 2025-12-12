@@ -1,0 +1,20 @@
+{
+  "name": "ingest",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.948.0",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.2",
+    "kafkajs": "^2.2.4"
+  }
+}

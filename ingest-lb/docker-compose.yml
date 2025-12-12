@@ -1,0 +1,52 @@
+# docker-compose.yml
+version: "3.8"
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: ingest-nginx
+    ports:
+      - "8080:8080"    # load balancer endpoint
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - ingest1
+      - ingest2
+      - ingest3
+    networks:
+      - adk-graph-net
+
+  ingest1:
+    build:
+      context: ../ingest
+    container_name: ingest1
+    environment:
+      - PORT=4000
+      - NODE_ENV=production
+      # add any Kafka env vars here (e.g., KAFKA_BROKER)
+    networks:
+      - adk-graph-net
+
+  ingest2:
+    build:
+      context: ../ingest
+    container_name: ingest2
+    environment:
+      - PORT=4000
+      - NODE_ENV=production
+    networks:
+      - adk-graph-net
+
+  ingest3:
+    build:
+      context: ../ingest
+    container_name: ingest3
+    environment:
+      - PORT=4000
+      - NODE_ENV=production
+    networks:
+      - adk-graph-net
+
+networks:
+  adk-graph-net:
+    external: true
