@@ -1,0 +1,26 @@
+{
+  "name": "adk-github",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "adk-github": "bin/adk-github.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "chalk": "^5.6.2",
+    "dotenv": "^17.2.3",
+    "fs-extra": "^11.3.2",
+    "inquirer": "^8.2.7",
+    "inquirer-select-pro": "^1.0.0-alpha.9",
+    "ora": "^9.0.0",
+    "uuid": "^13.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+.env
+.vscode
+.vscode-test
+.vscode-test.*
+.vscode-test.json
+.vscode-test.json.gz
+.vscode-test.json.gz.base64
+.vscode-test.json.gz.base64.gz
+.vscode-test.json.gz.base64.gz.gz
+.vscode-test.json.gz.base64.gz.gz.gz
+.vscode-test.json.gz.base64.gz.gz.gz.gz

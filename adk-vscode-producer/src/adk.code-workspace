@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../adk-github"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../lambda-script-github"
+		},
+		{
+			"path": "../../adk-cli"
+		}
+	]
+}

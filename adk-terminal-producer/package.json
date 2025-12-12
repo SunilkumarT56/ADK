@@ -1,0 +1,26 @@
+{
+  "name": "adk-cli",
+  "version": "0.1.17",
+  "description": "CLI for ADK-Graph terminal tracking",
+  "main": "bin/adk.js",
+  "bin": {
+    "adk": "bin/adk.js"
+  },
+  "scripts": {
+    "test": "node bin/adk.js help"
+  },
+  "keywords": [
+    "cli",
+    "developer-tools",
+    "tracking",
+    "system-design"
+  ],
+  "author": "sunilkumar",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "uuid": "^13.0.0"
+  }
+}
