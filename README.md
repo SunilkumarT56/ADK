@@ -276,6 +276,3 @@ MIT © 2025 Sunil Kumar
 If you like this project, kindly star ⭐ the repo — it motivates development!
 
 ---
-
-
----# adk
